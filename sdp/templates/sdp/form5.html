@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <title>Fifth Form</title>
+    <style>
+        /* Add your custom CSS styles here */
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Form 5</h2>
+    <form method="post" action="{% url 'form5_view' %}">
+
+        <!-- Curricular Units 2nd Sem (Credited) -->
+        <div class="form-group">
+            <label for="credited-units">Curricular Units 2nd Sem (Credited)</label>
+            <input type="number" class="form-control" id="credited-units" name="credited_units" placeholder="Number of curricular units credited in the 2nd semester">
+        </div>
+
+        <!-- Curricular Units 2nd Sem (Enrolled) -->
+        <div class="form-group">
+            <label for="enrolled-units">Curricular Units 2nd Sem (Enrolled)</label>
+            <input type="number" class="form-control" id="enrolled-units" name="enrolled_units" placeholder="Number of curricular units enrolled in the 2nd semester">
+        </div>
+
+        <!-- Curricular Units 2nd Sem (Evaluations) -->
+        <div class="form-group">
+            <label for="evaluations-units">Curricular Units 2nd Sem (Evaluations)</label>
+            <input type="number" class="form-control" id="evaluations-units" name="evaluations_units" placeholder="Number of evaluations to curricular units in the 2nd semester">
+        </div>
+
+        <!-- Curricular Units 2nd Sem (Approved) -->
+        <div class="form-group">
+            <label for="approved-units">Curricular Units 2nd Sem (Approved)</label>
+            <input type="number" class="form-control" id="approved-units" name="approved_units" placeholder="Number of curricular units approved in the 2nd semester">
+        </div>
+
+        <!-- Curricular Units 2nd Sem (Grade) -->
+        <div class="form-group">
+            <label for="grade-units">Curricular Units 2nd Sem (Grade)</label>
+            <input type="number" class="form-control" id="grade-units" name="grade_units" placeholder="Grade average in the 2nd semester (between 0 and 20)">
+        </div>
+
+        <!-- Curricular Units 2nd Sem (Without Evaluations) -->
+        <div class="form-group">
+            <label for="without-evaluations-units">Curricular Units 2nd Sem (Without Evaluations)</label>
+            <input type="number" class="form-control" id="without-evaluations-units" name="without_evaluations_units" placeholder="Number of curricular units without evalutions in the 2nd semester">
+        </div>
+
+        <!-- Buttons for navigation -->
+        <button type="submit" class="btn btn-primary" formaction="form4.html">Previous</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="{% static 'js/script.js' %}"></script>
+
+</body>
+</html>

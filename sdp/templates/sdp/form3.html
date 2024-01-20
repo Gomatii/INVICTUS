@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <title>Third Form</title>
+    
+    <style>
+        /* Add your custom CSS styles here */
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Form 3</h2>
+    <form method="post" action="">
+
+        <!-- College Preference -->
+        <div class="form-group">
+            <label for="college-preference">College Preference (0-9)</label>
+            <select class="form-control" id="college-preference" name="college_preference">
+                <!-- Add options for College Preference -->
+                    <option value="0">0</option>    
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+            </select>
+        </div>
+
+        <!-- Course -->
+        <div class="form-group">
+            <label for="course">Course</label>
+            <input type="text" class="form-control" id="course" name="course">
+        </div>
+
+        <!-- Daytime/Evening College -->
+        <div class="form-group">
+            <label for="college-timing">Daytime/Evening College</label>
+            <select class="form-control" id="college-timing" name="college_timing">
+                <option value="day">Day</option>
+                <option value="evening">Evening</option>
+            </select>
+        </div>
+
+        <!-- Previous Qualification -->
+        <div class="form-group">
+            <label for="prev-qualification">Previous Qualification</label>
+            <select class="form-control" id="prev-qualification" name="prev_qualification">
+                <!-- Add options for Previous Qualification -->
+                <option value="1">Secondary education</option>
+                <option value="2">Higher education - bachelor's degree</option>
+                <option value="3">Higher education - degree</option>
+                <option value="1">Higher education - master's</option>
+                <option value="2">Higher education - doctorate</option>
+                <option value="3">Frequency of higher education</option>
+                <option value="4">12th year of schooling - not completed</option>
+                <option value="5">11th year of schooling - not completed</option>
+                <option value="6">Other - 11th year of schooling</option>
+                <option value="7">10th year of schooling</option>
+                <option value="8">10th year of schooling - not completed</option>
+                <option value="9">Basic education 3rd cycle (9th/10th/11th year) or equiv.</option>
+                <option value="10">Basic education 2nd cycle (6th/7th/8th year) or equiv.</option>
+                <option value="11">Technological specialization course</option>
+                <option value="12">Higher education - degree (1st cycle)</option>
+                <option value="13">Professional higher technical course</option>
+                <option value="14">Higher education - master (2nd cycle)</option>
+            </select>
+        </div>
+
+        <!-- Scholarship Holder -->
+        <div class="form-group">
+            <label for="scholarship-holder">Scholarship Holder</label>
+            <select class="form-control" id="scholarship-holder" name="scholarship_holder">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+
+        <!-- Buttons for navigation -->
+        <button type="submit" class="btn btn-primary" formaction="form2.html">Previous</button>
+        <button type="submit" class="btn btn-secondary" formaction="form4.html">Next</button>
+
+    </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="{% static 'js/script.js' %}"></script>
+
+</body>
+</html>

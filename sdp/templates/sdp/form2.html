@@ -1,0 +1,265 @@
+<!-- form2.html -->
+<!DOCTYPE html>
+<html lang="en">
+<title>Second Form</title>
+<head>
+    <title>Second Form</title>
+    <!-- Bootstrap CSS link -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    
+    <style>
+        /* Add your custom CSS styles here */
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Second 2</h2>
+    <form method="post">
+        <div class="form-group">
+            <label for="mothers-qualification">Mother's Qualification</label>
+            <select class="form-control" id="mothers-qualification" name="mothers-qualification" required>
+                <option value="1">Secondary Education - 12th Year of Schooling or Eq.</option>
+                <option value="2">Higher Education - Bachelor's Degree</option>
+                <option value="3">Higher Education - Degree</option>
+                <option value="4">Higher Education - Master's</option>
+                <option value="5">Higher Education - Doctorate</option>
+                <option value="6">Frequency of Higher Education</option>
+                <option value="9">12th Year of Schooling - Not Completed</option>
+                <option value="10">11th Year of Schooling - Not Completed</option>
+                <option value="11">7th Year (Old)</option>
+                <option value="12">Other - 11th Year of Schooling</option>
+                <option value="14">10th Year of Schooling</option>
+                <option value="18">General commerce course</option>
+                <option value="19">Basic Education 3rd Cycle (9th/10th/11th Year) or Equiv.</option>
+                <option value="22">Technical-professional course</option>
+                <option value="26">7th year of schooling</option>
+                <option value="27">2nd cycle of the general high school course</option>
+                <option value="29">9th Year of Schooling - Not Completed</option>
+                <option value="30">8th year of schooling</option>
+                <option value="34">Unknown</option>
+                <option value="35">Can't read or write</option>
+                <option value="36">Can read without having a 4th year of schooling</option>
+                <option value="37">Basic education 1st cycle (4th/5th year) or equiv.</option>
+                <option value="38">Basic Education 2nd Cycle (6th/7th/8th Year) or Equiv.</option>
+                <option value="39">Technological specialization course</option>
+                <option value="40">Higher education - degree (1st cycle)</option>
+                <option value="41">Specialized higher studies course</option>
+                <option value="42">Professional higher technical course</option>
+                <option value="43">Higher Education - Master (2nd cycle)</option>
+                <option value="44">Higher Education - Doctorate (3rd cycle)</option>
+                <option value="other">Other (please specify)</option>
+
+            </select>
+        </div>
+
+        <div class="form-group" id="otherMotherQualificationInput" style="display: none;">
+            <label for="other-mother-qualification">Other Mother's Qualification</label>
+            <input type="text" class="form-control" id="other-mother-qualification" name="other_mother_qualification" placeholder="Enter other qualification">
+        </div>
+
+        <div class="form-group">
+            <label for="father-qualification">Father's qualification</label>
+            <select class="form-control" id="father-qualification" name="father_qualification">
+                <option value="1">Secondary Education - 12th Year of Schooling or Eq.</option>
+                <option value="2">Higher Education - Bachelor's Degree</option>
+                <option value="3">Higher Education - Degree</option>
+                <option value="4">Higher Education - Master's</option>
+                <option value="5">Higher Education - Doctorate</option>
+                <option value="6">Frequency of Higher Education</option>
+                <option value="9">12th Year of Schooling - Not Completed</option>
+                <option value="10">11th Year of Schooling - Not Completed</option>
+                <option value="11">7th Year (Old)</option>
+                <option value="12">Other - 11th Year of Schooling</option>
+                <option value="13">2nd year complementary high school course</option>
+                <option value="14">10th Year of Schooling</option>
+                <option value="18">General commerce course</option>
+                <option value="19">Basic Education 3rd Cycle (9th/10th/11th Year) or Equiv.</option>
+                <option value="20">Complementary High School Course</option>
+                <option value="22">Technical-professional course</option>
+                <option value="25">Complementary High School Course - not concluded</option>
+                <option value="26">7th year of schooling</option>
+                <option value="27">2nd cycle of the general high school course</option>
+                <option value="29">9th Year of Schooling - Not Completed</option>
+                <option value="30">8th year of schooling</option>
+                <option value="31">General Course of Administration and Commerce</option>
+                <option value="33">Supplementary Accounting and Administration</option>
+                <option value="34">Unknown</option>
+                <option value="35">Can't read or write</option>
+                <option value="36">Can read without having a 4th year of schooling</option>
+                <option value="37">Basic education 1st cycle (4th/5th year) or equiv.</option>
+                <option value="38">Basic Education 2nd Cycle (6th/7th/8th Year) or Equiv.</option>
+                <option value="39">Technological specialization course</option>
+                <option value="40">Higher education - degree (1st cycle)</option>
+                <option value="41">Specialized higher studies course</option>
+                <option value="42">Professional higher technical course</option>
+                <option value="43">Higher Education - Master (2nd cycle)</option>
+                <option value="44">Higher Education - Doctorate (3rd cycle)</option>
+                <option value="other">Other (please specify)</option>
+
+            </select>
+        </div>
+
+        <div class="form-group" id="otherFatherQualificationInput" style="display: none;">
+            <label for="other-father-qualification">Other Father's Qualification</label>
+            <input type="text" class="form-control" id="other-father-qualification" name="other_father_qualification" placeholder="Enter other qualification">
+        </div>
+
+        <div class="form-group">
+            <label for="mother-occupation">Mother's Occupation</label>
+            <select class="form-control" id="mother-occupation" name="mother_occupation">
+                <option value="1">Representatives of the Legislative Power and Executive Bodies, Directors, Directors and Executive Managers</option>
+                <option value="2">Specialists in Intellectual and Scientific Activities</option>
+                <option value="3">Intermediate Level Technicians and Professions</option>
+                <option value="4">Administrative staff</option>
+                <option value="5">Personal Services, Security and Safety Workers and Sellers</option>
+                <option value="6">Farmers and Skilled Workers in Agriculture, Fisheries and Forestry</option>
+                <option value="7">Skilled Workers in Industry, Construction and Craftsmen</option>
+                <option value="8">Installation and Machine Operators and Assembly Workers</option>
+                <option value="9">Unskilled Workers</option>
+                <option value="10">Armed Forces Professions</option>
+                <option value="11">7th Year (Old)</option>
+                <option value="12">Other - 11th Year of Schooling</option>
+                <option value="13">2nd year complementary high school course</option>
+                <option value="14">10th Year of Schooling</option>
+                <option value="18">General commerce course</option>
+                <option value="19">Basic Education 3rd Cycle (9th/10th/11th Year) or Equiv.</option>
+                <option value="22">Technical-professional course</option>
+                <option value="26">7th year of schooling</option>
+                <option value="27">2nd cycle of the general high school course</option>
+                <option value="29">9th Year of Schooling - Not Completed</option>
+                <option value="30">8th year of schooling</option>
+                <option value="34">Unknown</option>
+                <option value="35">Can't read or write</option>
+                <option value="36">Can read without having a 4th year of schooling</option>
+                <option value="37">Basic education 1st cycle (4th/5th year) or equiv.</option>
+                <option value="38">Basic Education 2nd Cycle (6th/7th/8th Year) or Equiv.</option>
+                <option value="39">Technological specialization course</option>
+                <option value="40">Higher education - degree (1st cycle)</option>
+                <option value="41">Specialized higher studies course</option>
+                <option value="42">Professional higher technical course</option>
+                <option value="43">Higher Education - Master (2nd cycle)</option>
+                <option value="44">Higher Education - Doctorate (3rd cycle)</option>
+                <option value="other">Other (please specify)</option>
+            </select>
+        </div>
+
+        <div class="form-group" id="otherMotherOccupationInput" style="display: none;">
+            <label for="other-mother-occupation">Other Mother's Occupation</label>
+            <input type="text" class="form-control" id="other-mother-occupation" name="other_mother_occupation" placeholder="Enter other occupation">
+        </div>
+
+        <div class="form-group">
+            <label for="father-occupation">Father's Occupation</label>
+            <select class="form-control" id="father-occupation" name="father_occupation">
+                <option value="0">Student</option>
+                <option value="1">Representatives of the Legislative Power and Executive Bodies, Directors, Directors and Executive Managers</option>
+                <option value="2">Specialists in Intellectual and Scientific Activities</option>
+                <option value="3">Intermediate Level Technicians and Professions</option>
+                <option value="4">Administrative staff</option>
+                <option value="5">Personal Services, Security and Safety Workers and Sellers</option>
+                <option value="6">Farmers and Skilled Workers in Agriculture, Fisheries and Forestry</option>
+                <option value="7">Skilled Workers in Industry, Construction and Craftsmen</option>
+                <option value="8">Installation and Machine Operators and Assembly Workers</option>
+                <option value="9">Unskilled Workers</option>
+                <option value="10">Armed Forces Professions</option>
+                <option value="90">Other Situation</option>
+                <option value="99">(blank)</option>
+                <option value="101">Armed Forces Officers</option>
+                <option value="102">Armed Forces Sergeants</option>
+                <option value="103">Other Armed Forces personnel</option>
+                <option value="112">Directors of administrative and commercial services</option>
+                <option value="114">Hotel, catering, trade and other services directors</option>
+                <option value="121">Specialists in the physical sciences, mathematics, engineering and related techniques</option>
+
+                <option value="194">Meal preparation assistants</option>
+                <option value="195">Street vendors (except food) and street service providers</option>
+                <option value="other">Other (please specify)</option>
+            </select>
+        </div>
+        
+        <div class="form-group" id="otherFatherOccupationInput" style="display: none;">
+            <label for="other-father-occupation">Other Father's Occupation</label>
+            <input type="text" class="form-control" id="other-father-occupation" name="other_father_occupation" placeholder="Enter other occupation">
+        </div>
+
+        <div class="form-group">
+            <label for="displaced">Educational special needs</label>
+            <div class="custom-control custom-radio">
+                <input type="radio" id="displacedYes" name="displaced" class="custom-control-input" value="yes">
+                <label class="custom-control-label" for="displacedYes">Yes</label>
+            </div>
+            <div class="custom-control custom-radio">
+                <input type="radio" id="displacedNo" name="displaced" class="custom-control-input" value="no">
+                <label class="custom-control-label" for="displacedNo">No</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="displaced">Debtor</label>
+            <div class="custom-control custom-radio">
+                <input type="radio" id="displacedYes" name="displaced" class="custom-control-input" value="yes">
+                <label class="custom-control-label" for="displacedYes">Yes</label>
+            </div>
+            <div class="custom-control custom-radio">
+                <input type="radio" id="displacedNo" name="displaced" class="custom-control-input" value="no">
+                <label class="custom-control-label" for="displacedNo">No</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="displaced">Tuition fees up to date</label>
+            <div class="custom-control custom-radio">
+                <input type="radio" id="displacedYes" name="displaced" class="custom-control-input" value="yes">
+                <label class="custom-control-label" for="displacedYes">Yes</label>
+            </div>
+            <div class="custom-control custom-radio">
+                <input type="radio" id="displacedNo" name="displaced" class="custom-control-input" value="no">
+                <label class="custom-control-label" for="displacedNo">No</label>
+            </div>
+        </div>
+
+        <!-- Add other form fields for the second form as needed -->
+
+        <button type="submit" class="btn btn-primary" formaction="form1.html">Previous</button>
+        <button type="submit" class="btn btn-secondary" formaction="form3.html">Next</button>
+    </form>
+</div>
+
+
+
+
+<script>
+    function setupOtherFieldListener(selectId, otherFieldId) {
+    document.getElementById(selectId).addEventListener("change", function () {
+        if (this.value === "other") {
+            document.getElementById(otherFieldId).style.display = "block";
+        } else {
+            document.getElementById(otherFieldId).style.display = "none";
+        }
+    });
+}
+
+setupOtherFieldListener("mother-qualification", "otherMotherQualificationInput");
+setupOtherFieldListener("father-qualification", "otherFatherQualificationInput")
+setupOtherFieldListener("mother-occupation", "otherMotherOccupationInput");
+setupOtherFieldListener("father-occupation", "otherFatherOccupationInput");
+
+// Similar setup for Father's Qualification and Occupation
+
+</script>
+
+</body>
+</html>
