@@ -56,4 +56,24 @@ def user_logout(request):
 
 @login_required(login_url="login")
 def dashboard(request):
-        return render(request, 'sdp/dashboard.html')
+        return render(request, 'sdp/form1.html')
+
+# @login_required(login_url="login")
+# def form1(request):
+#         return render(request, 'sdp/form1.html')
+
+@login_required(login_url="login")
+def form2(request):
+        return render(request, 'sdp/form2.html')
+
+@login_required(login_url="login")
+def form4(request):
+        return render(request, 'sdp/form4.html')
+
+@login_required(login_url="login")
+def form3(request):
+        return render(request, 'sdp/form3.html')
+
+@login_required(login_url="login")
+def form5(request):
+        return render(request, 'sdp/form5.html')
